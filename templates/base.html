@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+       <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+       <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+       <link rel="icon" type="image/x-icon" href="http://mnnit.ac.in/templates/favourite/favicon.ico">
+
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+
+
+
+    <title>MNNIT NETWORK COMPLAINT PORTAL: HOMEPAGE</title>
+  </head>
+
+  <body>
+    <div>
+        
+        <nav class="navbar navbar-expand-md navbar-light bg-light border">
+          <img src="http://mnnit.ac.in/images/logonew1.png" style="width:130px; height:68px;" class="navbar-brand-center" alt="MNNIT-ALLAHABAD">
+          <span class="col-md-8 mx-auto text-center">
+          <a class="navbar-brand" href="/"><h5><b>Network Complaint Portal<br/>Computer Center</b></h5></a>
+          </span>
+          
+          </div>
+      </nav>
+    </div>
+    
+     
+    <div>
+      <main class="container p-5">
+        
+    <div class="card">
+      <div class="card-header">
+        Quick Help
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="/tutorial/1/"><li class="list-group-item">Setting I.P. Address on Windows</li></a>
+        <a href="/tutorial/2/"><li class="list-group-item">Setting I.P. Address on Linux/Ubuntu</li></a>
+        <a href="http://mnnit.ac.in/computercentre/index.php/ip-address-scheme" target="_blank"><li class="list-group-item">I.P. Address Scheme</li></a>
+        <a href="mailto:helpemail@mnnit.ac.in" target="_blank"><li class="list-group-item">Email Related Issues(helpemail@mnnit.ac.in)</li></a>
+        <a href="mailto:helpmsteams@mnnit.ac" target="_blank"><li class="list-group-item">MSTeams Related Issues(helpmsteams@mnnit.ac.in)</li></a>
+      </ul>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-header">
+        Available Actions
+      </div>
+        <ul class="list-group list-group-flush">
+          <a href="/registerComplaint/"><li class="list-group-item">Register a Complaint</li></a>
+          <a href="/checkStatus/"><li class="list-group-item">Check Complaint Status</li></a>
+          <a href="/login/"><li class="list-group-item">I.T Manager/Technician Login</li></a>
+          <a href="/managerDashboard/"><li class="list-group-item">I.T Manager Dashboard</li></a>
+          <a href="/technicianDashboard/"><li class="list-group-item">Technician Dashboard</li></a>
+        </ul>
+      </div>
+
+      </main>
+
+      <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi. My name is Sachin. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="p-3 bg-light small text-center text-muted" style="user-select: none;border-radius: 6px;">
+      &#169;2022 MNNIT
+      <br />
+      All Rights Reserved
+      <br />
+      <i style="font-size:10px">Designed & Developed By<a href="https://www.linkedin.com/in/real-aryansingh/" class="text-secondary"> Aryan</a></i>
+      <br />
+    </footer>
+    <script
+    $SCRIPT_ROOT = {{ request.script_root|tojson }}>
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Sachin. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script
+        $SCRIPT_ROOT = {{ request.script_root|tojson }}>
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html> -->
