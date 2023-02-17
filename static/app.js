@@ -46,7 +46,7 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-        fetch('https://chatbot-oq4v.onrender.com/predict', {
+        fetch('https://chatbot-production-cc4d.up.railway.app/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
@@ -56,8 +56,7 @@ class Chatbox {
           })
           .then(r => r.json())
           .then(r => {
-           console.log(r);
-            let msg2 = { name: "Sachin", message: r.answer };
+            let msg2 = { name: "Sam", message: r.answer };
             this.messages.push(msg2);
             this.updateChatText(chatbox)
             textField.value = ''
@@ -72,7 +71,7 @@ class Chatbox {
     updateChatText(chatbox) {
         var html = '';
         this.messages.slice().reverse().forEach(function(item, index) {
-            if (item.name === "Sachin")
+            if (item.name === "Sam")
             {
                 html += '<div class="messages__item messages__item--visitor">' + item.message + '</div>'
             }
