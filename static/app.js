@@ -46,10 +46,10 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-        fetch('https://chatbot-production-cc4d.up.railway.app/predict', {
+        fetch('chatbot-production-cc4d.up.railway.app/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
-            mode: 'no-cors',
+            
             headers: {
               'Content-Type': 'application/json'
             },
