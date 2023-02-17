@@ -49,7 +49,7 @@ class Chatbox {
         fetch('https://chatbot-production-cc4d.up.railway.app/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
-            mode: 'cors',
+            mode: 'no-cors',
             headers: {
               'Content-Type': 'application/json'
             },
