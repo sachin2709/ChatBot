@@ -48,7 +48,11 @@ class Chatbox {
 
         fetch('https://chatbot-production-cc4d.up.railway.app/predict', {
             method: 'POST',
-            body: JSON.stringify({ message: text1 })
+            body: JSON.stringify({ message: text1 }),
+            mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json'
+            },
           })
           .then(r => r.json())
           .then(r => {
