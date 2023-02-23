@@ -4,7 +4,7 @@ from flask_cors import CORS, cross_origin
 from chat import get_response
 
 app = Flask(__name__)
-CORS(app, origins=["https://chatbot-oq4v.onrender.com", "https://chatbot-production-cc4d.up.railway.app"])
+CORS(app, origins="*")
 
 @app.get("/")
 def index_get():
