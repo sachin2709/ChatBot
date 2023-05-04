@@ -32,53 +32,29 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
-      "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
-      "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
-      ]
+      "tag":"Interet Not Working",
+      "patterns":["MY Internet is Not Working","Why is my Internet is slow","How can i improve my Internet speed,Internet slow,"],
+      "responses": ["Firstly Check that whether Internet is Working Properly in your Neighbouring Room??"]
+
+
     },
     {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
+      "tag":"Internet is Working Properly in Neighbouring Room",
+      "patterns":["Yes,Internet is Working Properly in Neighbouring Room","Yes ,it is Working","Yes it is "],
+      "responses": ["Check that You are Connected properly to MNNIT via wifi or Ethernet"]
+    
     },
     {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
-      ]
+      "tag":"No ,Internet is also Not Working in Neigbhouring Room",
+      "patterns":["No,they also facing same issue,Entire hostel wifi is not working","Entire hostel Ethernet is not working"],
+      "responses": ["If Internet is also not working in Neighbouring Room or in more than one room,then There may be issue with Router or connections,You should contact to Technician.."]
+    
     },
     {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
-      ],
-      "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
-      ]
+      "tag":"Yes,Im Connected",
+      "patterns":["Yes,Iam Connected to MNNIT Properly","Yes Iam Connected ","Iam Connected"],
+      "responses": ["Open Command Promp"]
+    
     }
   ]
 }

@@ -12,6 +12,7 @@ class Chatbox {
 
     display() {
         const {openButton, chatBox, sendButton} = this.args;
+    
 
         openButton.addEventListener('click', () => this.toggleState(chatBox))
 
@@ -45,8 +46,8 @@ class Chatbox {
 
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
-
-        fetch('https://chatbot-production-4975.up.railway.app/predict', {
+        // https://chatbot-production-4975.up.railway.app/predict
+        fetch('http://127.0.0.1:5000/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
@@ -85,6 +86,18 @@ class Chatbox {
         chatmessage.innerHTML = html;
     }
 }
+const placeholders = [
+    "My internet is not working",
+    "Why is my internet slow?",
+    "How can I improve internet speed?"
+  ];
+  
+  let index = 0;
+  
+  setInterval(() => {
+    document.getElementById("myInput").placeholder = placeholders[index];
+    index = (index + 1) % placeholders.length;
+  }, 2000);
 
 
 const chatbox = new Chatbox();
