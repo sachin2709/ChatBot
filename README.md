@@ -1,4 +1,4 @@
-# Chatbot Deployment with Flask and JavaScript
+# Chatbot 
 
 ## Initial Setup:
 This repo currently contains the starter files.
